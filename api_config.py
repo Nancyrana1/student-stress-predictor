@@ -1,7 +1,7 @@
 import os
 
 # Deployed API (Render). For local dev: API_BASE_URL=http://127.0.0.1:8000
-_DEFAULT_BASE = "https://student-stress-predictor-yogq.onrender.com"
+_DEFAULT_BASE = "https://student-stress-predictor-ixru.onrender.com"
 
 
 def get_api_base() -> str:
