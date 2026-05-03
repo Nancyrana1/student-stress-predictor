@@ -18,8 +18,9 @@ st.markdown(
     "not auditioning for “most productive human.”"
 )
 st.caption(
-    f"API base: `{get_api_base()}`. Start the API: `uvicorn model:app --host 0.0.0.0 --port 8000`. "
-    "Override with `API_BASE_URL` if needed."
+    f"API base: `{get_api_base()}`. "
+    "For a **local** API instead, set env `API_BASE_URL=http://127.0.0.1:8000` and run "
+    "`uvicorn model:app --host 127.0.0.1 --port 8000`."
 )
 
 left, right = st.columns((1.15, 1.0), gap="large")
