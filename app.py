@@ -23,7 +23,7 @@ if st.button("Predict Stress Level"):
         "GPA":                                gpa
     }
 
-    response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+    response = requests.post("https://student-stress-predictor-7zuj.onrender.com", json=payload)
 
     if response.status_code == 200:
         result = response.json()
